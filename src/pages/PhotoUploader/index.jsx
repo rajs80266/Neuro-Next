@@ -1,4 +1,3 @@
-// PhotoUploader.js (React component)
 import React, { useState } from 'react';
 import './style.css';
 
@@ -31,7 +30,7 @@ const PhotoUploader = () => {
     <div className="photo-uploader">
       <div className="upload-options">
         <button className="option-button" onClick={handleCameraClick}>
-          Take Photo
+          Take Live Photo
         </button>
         <input
           type="file"

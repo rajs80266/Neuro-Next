@@ -1,11 +1,31 @@
 /* Login.css */
+.contain {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  width: 300px;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 27px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
 .login-container {
-    max-width: 300px;
+    max-width: 700px;
+    height: 500px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 10px;
+    background: var(--foundation-blue-b-50, #EAFDF8);
+    border-radius: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
   }
   
   .form-group {
@@ -22,20 +42,66 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 20px;
   }
   
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .login_image {
+    height: 500px;
+    width: 300px;
+    border-radius: 32px 0px 0px 32px;
+background: linear-gradient(0deg, rgba(4, 13, 43, 0.85) 0%, rgba(4, 13, 43, 0.85) 100%), url('../../images/login.jpg'), lightgray 50% / cover no-repeat;
+    
+  }
+
+  .credentials {
+    display: inline-flex;
+height: 357px;
+flex-direction: column;
+align-items: flex-start;
+gap: 24px;
+flex-shrink: 0;
+position: relative;
+left: 80px;
+top: 100px;
+  }
+
+
+
+  .button {
+    /* padding: 10px 20px; */
     font-size: 16px;
+    background-color: #2fe7bb;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    cursor: pointer;
+  
+    display: flex;
+    height: 56px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    height: 56px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
   }
   
-  button:hover {
+  Link {
+    text-decoration: none;
+  }
+  
+  .button:hover {
     background-color: #0056b3;
+    color: white;
   }
-  
+
+  .other-button {
+    background-color: aliceblue;
+    border-color: #000;
+  }

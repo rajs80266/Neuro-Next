@@ -8,6 +8,7 @@ import Signup from './pages/Signup';
 import Dashboard from './pages/Dashboard';
 import PhotoUploader from './pages/PhotoUploader';
 import QuestionsPage from './pages/Questions';
+import Assesment from './pages/Assessment';
 
 const App = () => {
   return (
@@ -43,6 +44,11 @@ const App = () => {
             exact
             path="/questionnaire"
             render={() => <QuestionsPage />}
+          />
+          <Route
+            exact
+            path="/assessment"
+            render={() => <Assesment />}
           />
         </Switch>
       </Shell>

@@ -1,0 +1,54 @@
+/* Dashboard.css */
+.dashboard-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .option-button {
+    padding: 15px;
+    font-size: 16px;
+    background-color: #2fe7bb;
+    color: #000;
+    border: none;
+    border-radius: 25px;
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    height: 56px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+    height: 56px;
+    padding: 10px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .option-button:hover {
+    background-color: #0056b3;
+    color: white;
+  }
+  
+  Link {
+    text-decoration: none;
+  }
+  

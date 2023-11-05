@@ -4,43 +4,22 @@ import { Link } from 'react-router-dom';
 
 import './style.css';
 
-import image1 from '../../images/image1.png';
+import logo from '../../images/logo.png';
 
 const HomePage = () => {
-    const images = [
-      image1,
-      image1,
-      image1,
-    ];
-  
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setCurrentImageIndex(prevIndex =>
-          (prevIndex + 1) % images.length
-        );
-      }, 2000);
-  
-      return () => clearInterval(interval);
-    }, [images.length]);
-  
-    return (
-      <div className="image-slider-container">
-        <img
-          src={images[currentImageIndex]}
-          alt={`Image ${currentImageIndex + 1}`}
-          className="image-slider"
-        />
-        <div className="button-container">
-          <Link to="/login">
-            <button className="button">
-              Let's get started
-            </button>
-          </Link>
-        </div>
+  return (
+    <div className="container">
+      <img src={logo} height={300} className='logo'/>
+
+      <div className="content">
+        <h2>Content Below Image</h2>
+        <p>Some text goes here.</p>
       </div>
-    );
+      <center>
+      <Link to="/login"><button className="button">Let's Get Started ></button></Link>
+      </center>
+    </div>
+    )
   };
 
 export default HomePage;

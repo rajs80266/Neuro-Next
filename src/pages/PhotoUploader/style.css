@@ -31,10 +31,6 @@
     font-size: 18px;
   }
   
-  .file-input {
-    display: none;
-  }
-  
   .preview {
     margin-top: 20px;
   }
@@ -43,3 +39,30 @@
     max-width: 100%;
   }
   
+  .file-input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px; /* Add some margin to separate it from the button */
+  }
+  
+  .file-input-label {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .file-input-label input {
+    display: none;
+  }

@@ -9,6 +9,12 @@
 .shell {
     margin: 0;
     padding: 0;
+    opacity: 0.75;
+    background: linear-gradient(117deg, #000000 2.05%, #0b442d 95.91%);
+    height: 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .shell-header {
@@ -43,3 +49,4 @@ body {
     position: relative;
     top: 2px;
 }
+
