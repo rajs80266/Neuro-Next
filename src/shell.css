@@ -1,0 +1,45 @@
+  /* CSS Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  
+.shell {
+    margin: 0;
+    padding: 0;
+}
+
+.shell-header {
+    max-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+.shell-navigator {
+    position: relative;
+    top: 70px;
+    padding: 5px;
+}
+
+.shell-content {
+    position: relative;
+    top: 100px;
+    min-height: 100px;
+    padding: 5px;
+}
+
+.shell-footer {
+    position: relative;
+    top: 130px;
+}
+
+body {
+    margin: 0;
+}
+
+.icons {
+    position: relative;
+    top: 2px;
+}
